@@ -1,0 +1,45 @@
+<div class="container mt-5">
+  <div class="row mt-5">
+    <div class="col-sm-6 offset-3">
+      <form [formGroup]="registrationForm">
+
+        <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+
+        <div class="form-group">
+          <label for="floatingInput">Full Names</label>
+          <input type="text" class="form-control" formControlName="names" id="floatingInput" placeholder="John Doe">
+
+        </div>
+
+        <div class="form-group">
+          <label for="floatingInput">Phone Number</label>
+          <input type="text" class="form-control" formControlName="phone" id="floatingInput" placeholder="0705984772">
+
+        </div>
+
+        <div class="form-group">
+          <label for="floatingInput">Email address</label>
+          <input type="email" class="form-control" formControlName="email" id="floatingInput"
+            placeholder="name@example.com">
+
+        </div>
+        <div class="form-group">
+          <label for="floatingPassword">Password</label>
+          <input type="password" class="form-control" formControlName="password" id="floatingPassword"
+            placeholder="Password">
+
+        </div>
+        <div class="form-group">
+          <label for="floatingPassword">Confirm Password</label>
+          <input type="password" class="form-control" formControlName="confirmPassword" id="floatingPassword"
+            placeholder="Password">
+
+        </div>
+
+        <button class="w-100 btn btn-lg btn-success mt-4" (click)="registerUser()">Sign in</button>
+        <p class="pt-3 text-right">You have an account? <a routerLink="/login">Sign in</a></p>
+      </form>
+    </div>
+
+  </div>
+</div>

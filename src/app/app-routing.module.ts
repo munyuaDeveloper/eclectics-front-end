@@ -4,7 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: ()=> import('./pdf-module/pdf-module.module').then(m=> m.PdfModuleModule)
+    loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
   }
 ];
 

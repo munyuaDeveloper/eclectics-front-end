@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <div class="row mt-5">
+    <div class="col-sm-4 offset-4">
+      <div [formGroup]="loginForm">
+
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+        <div class="form-group">
+          <label for="floatingInput">Email address</label>
+          <input type="email" formControlName="email" class="form-control" id="floatingInput"
+            placeholder="john@gmail.com">
+
+        </div>
+        <div class="form-group">
+          <label for="floatingPassword">Password</label>
+          <input type="password" formControlName="password" class="form-control" id="floatingPassword"
+            placeholder="Password">
+
+        </div>
+
+        <button class="w-100 btn btn-lg btn-success mt-4" (click)="userLogin()">Sign in</button>
+        <p class="pt-3 text-right">You don't have an account? <a routerLink="/registration">Create Account</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
